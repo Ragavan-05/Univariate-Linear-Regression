@@ -32,7 +32,7 @@ den f= (x[1].xmean)**2
 m = num / den
 cs Ymean .m*x_mean
 print (m, c)
- Mukiny predictions
+#Mukiny predictions
 Y pred a e'x+e
 print(Y_pred)
 plt.scatter(x, Y) Iactuol
