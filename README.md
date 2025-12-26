@@ -5,21 +5,37 @@ To implement univariate Linear Regression to fit a straight line using least squ
 1.	Hardware – PCs
 2.	Anaconda – Python 3.7 Installation / Moodle-Code Runner
 ## Algorithm:
-1.	Get the independent variable X and dependent variable Y.
-2.	Calculate the mean of the X -values and the mean of the Y -values.
-3.	Find the slope m of the line of best fit using the formula.
- ![eqn1](./eq1.jpg)
-4.	Compute the y -intercept of the line by using the formula:
-![eqn2](./eq2.jpg)  
-5.	Use the slope m and the y -intercept to form the equation of the line.
-6.	Obtain the straight line equation Y=mX+b and plot the scatterplot.
+Step 1:
+Import required libraries and store the input data � and �.
+Step 2:
+Calculate the mean of � and �.
+Step 3:
+Compute the slope � using the least squares formula.
+Step 4:
+Calculate the intercept �.
+Step 5:
+Form the regression equation � and predict the output.
 ## Program
-```
-
-
-
-
-
+```py
+inport numpy as np
+ieport matplotlib.pyplot as plt
+X* np.array([o, 1, 2, 3, 4, 5, 6,7, 8, 9])Y s np.array([, 3, 2, 5, 7, 8, 8, 9, 10, 12])plt.scatter(X，Y)
+plt.show()
+2
+X nean s np.mean(X)Ymean s np.mean(Y)num 80
+den s 0
+for i in range(len(X)):
+num s (X[]·X_mean)*(Y[1]·Y_mean)
+den f= (x[1].xmean)**2
+m = num / den
+cs Ymean .m*x_mean
+print (m, c)
+Y pred a e'x+e
+print(Y_pred)
+plt.scatter(x, Y) Iactuol
+plt. scatter(x, Y.pred, colo-'red')
+plt.plot(lein(x), x(x)1,lain(Y.pred), sr(Y pred)l, colore'red') t predictn
+plt.shcmo
 
 ```
 ## Output
